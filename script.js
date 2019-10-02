@@ -3,6 +3,7 @@ const heightList = document.querySelector('.height');
 const hairColorList = document.querySelector('.hairColor');
 const skinColorList = document.querySelector('.skinColor');
 const genderList = document.querySelector('.gender');
+const homeList = document.querySelector('.home');
 
 fetch('https://swapi.co/api/people/20/')
 	.then((response) => {
@@ -21,10 +22,9 @@ fetch('https://swapi.co/api/people/20/')
 		hairColorList.innerText = `Hair color: ${hairColor}`;
 		skinColorList.innerText = `Skin color: ${skinColor}`;
 		genderList.innerText = `Gender: ${gender}`;
-
-		// });
-		//     return fetch(data.homeworld);
-		// 	.then((response) => {return response.json();
-		// 	console.log(homeworldData);
-		// 	const home = homeworldData;
+		fetch(data.homeworld).then((response) => response.json()).then((data) => {
+			// const planet = data.name;
+			console.log(data.name);
+			// homeList.innerText = `Home Planet: ${data.name}`;
+		});
 	});
