@@ -1,4 +1,4 @@
-const nameList = document.querySelector('.name');
+const nameList = document.querySelector('h2');
 const heightList = document.querySelector('.height');
 const hairColorList = document.querySelector('.hairColor');
 const skinColorList = document.querySelector('.skinColor');
@@ -16,11 +16,11 @@ fetch('https://swapi.co/api/people/20/')
 		const skinColor = data.skin_color;
 		const gender = data.gender;
 
-		nameList.innerText = `Hello, ${name}, my name is.`;
+		nameList.innerText = `${name}`;
 		heightList.innerText = `Height: ${height} cm`;
 		hairColorList.innerText = `Hair color: ${hairColor}`;
 		skinColorList.innerText = `Skin color: ${skinColor}`;
 		genderList.innerText = `Gender: ${gender}`;
 
-		return fetch(date.homeworld);
+		return fetch(data.homeworld);
 	});

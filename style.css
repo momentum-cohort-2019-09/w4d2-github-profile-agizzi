@@ -3,14 +3,24 @@
 	font-family: 'Muli', sans-serif;
 	padding: 0;
 	margin: 0 auto;
+	text-align: center;
+}
+
+body {
+	max-width: 600px;
+	text-align: left;
+
 	display: flex;
-	flex-direction: column;
-	align-content: center;
 }
 
 img {
 	display: flex;
-	/* width: 60vw;
-	height: 20vh; */
+	width: 20vw;
+	height: 60vh;
 	border-radius: 10%;
+}
+
+.list {
+	/* display: inline; */
+	text-align: left;
 }
