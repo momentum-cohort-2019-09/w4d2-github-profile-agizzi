@@ -3,7 +3,7 @@ const heightList = document.querySelector('.height');
 const hairColorList = document.querySelector('.hairColor');
 const skinColorList = document.querySelector('.skinColor');
 const genderList = document.querySelector('.gender');
-const homeList = document.querySelector('.home');
+// const homeList = document.querySelector('.home');
 
 fetch('https://swapi.co/api/people/20/')
 	.then((response) => {
@@ -17,7 +17,7 @@ fetch('https://swapi.co/api/people/20/')
 		const skinColor = data.skin_color;
 		const gender = data.gender;
 
-		nameList.innerText = `About ${name}`;
+		nameList.innerText = `${name}, 900`;
 		heightList.innerText = `Height: ${height} cm`;
 		hairColorList.innerText = `Hair color: ${hairColor}`;
 		skinColorList.innerText = `Skin color: ${skinColor}`;

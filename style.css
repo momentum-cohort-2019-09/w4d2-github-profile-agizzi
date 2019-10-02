@@ -1,28 +1,45 @@
 * {
 	box-sizing: border-box;
-	font-family: 'Muli', sans-serif;
 	padding: 0;
-	margin: 0 auto;
-	text-align: center;
+	margin: 0;
 }
 
 body {
-	background-image: url('http://getwallpapers.com/wallpaper/full/b/f/9/16392.jpg');
-	padding-top: 50px;
-	max-width: 600px;
-	text-align: left;
+	font-family: 'Muli', sans-serif;
 	display: flex;
-	color: yellow;
+	align-items: center;
+	flex-direction: column;
 }
 
-img {
+.container {
+	margin-top: 10px;
+	max-width: 507px;
+	box-shadow: 10px 5px 5px 1px rgba(0, 0, 0, 0.4);
+}
+
+.bio {
+	margin-left: 10px;
+}
+
+.distance {
 	display: flex;
-	/* width: 20vw; */
-	height: 60%;
-	border-radius: 50%;
+	flex-direction: row;
+}
+
+.icon {
+	height: 30px;
+}
+
+hr {
+	margin-left: 1rem;
+	margin-right: 1rem;
 }
 
 .list {
-	/* display: inline; */
 	text-align: left;
+	margin: 1rem;
+}
+
+.paragraph {
+	margin-bottom: 1rem;
 }
