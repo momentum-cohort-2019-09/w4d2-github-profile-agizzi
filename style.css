@@ -7,17 +7,19 @@
 }
 
 body {
+	background-image: url('http://getwallpapers.com/wallpaper/full/b/f/9/16392.jpg');
+	padding-top: 50px;
 	max-width: 600px;
 	text-align: left;
-
 	display: flex;
+	color: yellow;
 }
 
 img {
 	display: flex;
-	width: 20vw;
-	height: 60vh;
-	border-radius: 10%;
+	/* width: 20vw; */
+	height: 60%;
+	border-radius: 50%;
 }
 
 .list {

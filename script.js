@@ -16,11 +16,15 @@ fetch('https://swapi.co/api/people/20/')
 		const skinColor = data.skin_color;
 		const gender = data.gender;
 
-		nameList.innerText = `${name}`;
+		nameList.innerText = `About ${name}`;
 		heightList.innerText = `Height: ${height} cm`;
 		hairColorList.innerText = `Hair color: ${hairColor}`;
 		skinColorList.innerText = `Skin color: ${skinColor}`;
 		genderList.innerText = `Gender: ${gender}`;
 
-		return fetch(data.homeworld);
+		// });
+		//     return fetch(data.homeworld);
+		// 	.then((response) => {return response.json();
+		// 	console.log(homeworldData);
+		// 	const home = homeworldData;
 	});
